@@ -1,0 +1,200 @@
+/* MinaBooks: tema visual perikanan. Tidak mengubah struktur data atau perilaku aplikasi. */
+:root {
+  --ink: #14344a;
+  --muted: #718b9a;
+  --green: #087d97;
+  --green-dark: #07536d;
+  --mint: #e5f6f8;
+  --bg: #f2f7f9;
+  --border: #dfebf0;
+  --shadow: 0 10px 29px rgba(13, 64, 88, .045);
+  --red: #b9535d;
+  --sea-dark: #072a40;
+  --sea-deep: #0b405b;
+  --sea: #087e9d;
+  --sea-light: #60cbd1;
+  --sand: #f5b773;
+}
+body { background: var(--bg); color: var(--ink); }
+a:hover { color: var(--sea); }
+
+/* Navigasi: suasana laut dalam, namun susunan menu dan URL tetap sama. */
+.sidebar {
+  background: linear-gradient(169deg, #07293f 0%, #0a3c54 55%, #0b455c 100%);
+  color: #b6d5df;
+  scrollbar-color: #31657a transparent;
+}
+.sidebar:before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px;
+  background: linear-gradient(90deg, #3fd4d0, #a9ebdb, #f7bd79); }
+.brand { color: #fff; gap: 11px; font-size: 22px; padding-bottom: 27px; }
+.brand:hover { color: #fff; }
+.brand-mark { background: linear-gradient(135deg, #137996, #0e4e71); width: 42px; height: 42px;
+  box-shadow: inset 0 0 0 1px rgba(185, 243, 249, .22), 0 5px 14px rgba(0, 22, 41, .23); }
+.brand-mark img { width: 33px; height: 33px; }
+.brand-bold { color: #9de7df; }
+.brand small { color: #81b7c7; font-size: 8px; letter-spacing: 1.05px; }
+.company { background: rgba(115, 191, 209, .10); border-color: rgba(149, 225, 232, .16); }
+.avatar { background: #c4e7e7; color: #17536a; }
+.company-info span { color: #94bfc9; }
+.company-arrow { color: #a0ceda; }
+.nav-label { color: #82afc0; }
+.side-nav a { color: #b7d0d9; }
+.side-nav a:hover { background: rgba(123, 209, 220, .14); color: #fff; }
+.side-nav a.active { background: linear-gradient(100deg, #0e82a0, #0c6a89);
+  color: #fff; box-shadow: inset 3px 0 0 #9aeee0, 0 4px 12px rgba(0, 21, 36, .13); }
+.nav-ico { width: 21px; color: #93dfdf; }
+.side-nav a.active .nav-ico { color: #e1fffb; }
+.sidebar-help { background: linear-gradient(135deg, #175b74, #11415c); border-color: rgba(144, 223, 234, .2); overflow: hidden; position: relative; }
+.sidebar-help:after { content: '≈'; position: absolute; right: -8px; bottom: -41px; font-size: 105px; color: rgba(186, 252, 246, .085); }
+.help-symbol { color: #7de2df; font-size: 30px; }
+.sidebar-help strong { color: #f1fffe; }
+.sidebar-help small { color: #aad5df; line-height: 1.55; position: relative; z-index: 1; }
+
+/* Permukaan, tipografi, dan tombol */
+.topbar { background: rgba(255,255,255,.91); }
+.breadcrumbs { color: #91a6b3; }
+.breadcrumbs span { color: #c0d3dd; }
+.breadcrumbs b { color: #1c5069; }
+.online { color: #477c91; }
+.online-dot { background: #24bfb0; box-shadow: 0 0 0 4px #e3f8f5; }
+.top-avatar { background: #d8eced; color: #24637b; }
+.signout { color: #587c8e; }
+.eyebrow { color: var(--sea); }
+.page-head p { color: #718c9b; }
+.heading-leaf { color: #65d7da; font-weight: 500; }
+.btn-primary { background: #0a83a0; color: #fff; box-shadow: 0 5px 15px #087d991e; }
+.btn-primary:hover { background: #066581; color: #fff; }
+.btn-outline { border-color: #d5e6ee; color: #477085; }
+.btn-outline:hover { border-color: #3ca9ba; background: #f0fafb; color: #086b87; }
+.btn-soft { background: #e3f4f7; color: #087894; }
+.btn-soft:hover { background: #ceeaf1; color: #07566d; }
+.period-bar,.filter-strip { border-color: var(--border); }
+.period-bar label,.filter-strip label { color: #637e8d; }
+.period-badge { color: #34879b; }
+.form-control { border-color: #d7e5ec; color: #23485d; }
+.form-control:focus { border-color: #259db5; box-shadow: 0 0 0 3px #1c98b41b; }
+.form-control::placeholder { color: #a3b7c1; }
+
+/* Dashboard: banner maritim dan kartu yang sudah ada tetap bekerja sama. */
+.dashboard-heading { position: relative; overflow: hidden; min-height: 190px; border-radius: 20px;
+  margin-bottom: 23px; padding: 30px 32px; color: #fff;
+  background: linear-gradient(111deg, #07364f 0%, #075673 55%, #0d7893 100%);
+  box-shadow: 0 14px 32px rgba(9, 60, 88, .12); isolation: isolate; }
+.dashboard-heading:before { content: ''; position: absolute; z-index: -1; width: 465px; height: 330px;
+  right: 7%; bottom: -120px; background: url('../img/ocean-scene.svg') center / contain no-repeat; opacity: .73; }
+.dashboard-heading:after { content: ''; position: absolute; z-index: -1; width: 440px; height: 440px;
+  border: 1px solid rgba(188, 241, 244, .16); border-radius: 50%; right: -145px; top: -260px; }
+.dashboard-head-copy { position: relative; z-index: 1; }
+.dashboard-heading .eyebrow { color: #8de5e5; letter-spacing: 1.8px; }
+.dashboard-heading h1 { color: #fff; font-size: 31px; letter-spacing: -.9px; margin-bottom: 10px; }
+.dashboard-heading p { color: #d2eff2; max-width: 405px; font-size: 12px; }
+.hero-tag { display: inline-flex; color: #dcfefa; border: 1px solid rgba(186,246,240,.22);
+  background: rgba(182, 238, 238, .11); border-radius: 100px; padding: 7px 10px; font-size: 10px; font-weight: 700; margin-top: 14px; }
+.dashboard-heading .head-actions { position: relative; z-index: 2; align-self: flex-start; }
+.dashboard-heading .btn-outline { background: rgba(255,255,255,.95); border-color: transparent; color: #11526a; }
+.dashboard-heading .btn-outline:hover { background: #fff; }
+.dashboard-heading .btn-primary { background: #f7b879; color: #173d50; box-shadow: none; }
+.dashboard-heading .btn-primary:hover { background: #ffcc94; }
+.stat-card { border-color: var(--border); }
+.stat-card:hover { border-color: #9fd7e3; }
+.stat-top { color: #678495; }
+.stat-icon.cyan { background: #e4f5fa; color: #138fae; }
+.stat-icon.yellow { background: #fff2e4; color: #cb8d4b; }
+.stat-icon.purple { background: #eaeffe; color: #5d80b3; }
+.stat-icon.green { background: #e3f6f3; color: #22a399; }
+.stat-card p { color: #8199a5; }
+.stat-line { background: linear-gradient(90deg, #1e9eb0, #68d6d4, #e2f6f4); }
+.panel { border-color: var(--border); }
+.panel-header p { color: #8ca3b0; }
+.muted-pill { background: #eef6f9; color: #678a9a; border-color: #e2edf2; }
+.chart-legend { color: #728f9f; }
+.dot.revenue { background: #087da0; }
+.dot.costs { background: #f2ab61; }
+.quick-link { border-bottom-color: #e9f1f5; }
+.quick-link:hover { background: #f0f8fa; }
+.quick-icon { background: #e3f3f7; color: #0b819e; }
+.quick-link small { color: #8ba3ad; }
+.quick-link b { color: #98bbc7; }
+.plain-link,.table-action { color: #087e9d; }
+
+/* Tabel dan laporan, dengan perhitungan akuntansi tetap milik Django. */
+.table-toolbar { border-bottom-color: #e7eef3; }
+.data-table thead { background: #f1f7fa; color: #69899b; }
+.data-table th,.data-table td { border-bottom-color: #e8f0f4; }
+.data-table tbody tr:hover { background: #f7fbfd; }
+.data-table tfoot { background: #e9f5f8; color: #16556c; }
+.strong-code { color: #126f90; }
+.status-chip { color: #087e91; background: #e8f6f7; border-color: #d0ecef; }
+.success-text { color: #159885; }
+.empty { color: #8ba2ae; }
+.empty-panel { color: #7693a3; }
+.empty-panel > span { color: #1699ad; }
+.empty-panel h2 { color: #24475d; }
+.footer { border-top-color: #e1ebef; color: #91a8b4; }
+.notice { border-color: #c4e8ed; background: #eaf8f9; color: #23738b; }
+.notice.error { background: #fff1f1; border-color: #f4c8c8; color: #9c353b; }
+.field label { color: #396377; }
+.field .check-input { accent-color: #168fa6; }
+.help-text { color: #889fab; }
+.form-actions { border-top-color: #e1ecf1; }
+.journal-totals span { color: #829bad; }
+.detail-strip > div { border-color: var(--border); }
+.detail-strip small { color: #8297a5; }
+.groups th { background: #e8f5f8; border-color: #d5e8ef; }
+.under-note { color: #7897a4; }
+.report-title { color: #3b849e; border-bottom-color: #e0edf2; }
+.report-title h2 { color: #16475e; }
+.report-title p { color: #8ba1ac; }
+.report-group { border-bottom-color: #e5eff3; }
+.report-group-title { color: #13647f; }
+.report-row span { color: #5b7d8e; }
+.account-code-inline { color: #2686a0 !important; }
+.report-subtotal { border-top-color: #d7e9f1; }
+.report-grand { background: #e0f3f6; }
+.report-grand.secondary { background: #eef5f7; }
+.side-highlight { background: linear-gradient(135deg, #0a7894, #073e58); }
+.side-highlight > span { color: #b8eff2; }
+.side-highlight p { color: #c0e7ed; }
+.mini-metric { border-color: var(--border); }
+.mini-metric span { color: #829bad; }
+
+/* Layar login: ilustrasi kapal nelayan dan ombak, tanpa perubahan autentikasi. */
+.login-screen { background: radial-gradient(circle at 15% 15%, #d2edf3, #eff7f9 45%, #ecf4f7); }
+.login-wrap { box-shadow: 0 24px 90px #103f602b; }
+.login-art { position: relative; background: linear-gradient(147deg, #07354d 0%, #075371 66%, #0b7b95 100%); isolation: isolate; }
+.login-art:after { content: ''; position: absolute; z-index: -1; inset: 0;
+  background: url('../img/ocean-scene.svg') center bottom -25px / 110% auto no-repeat; opacity: .67; pointer-events: none; }
+.login-art:before { content: ''; position: absolute; z-index: -1; inset: 0;
+  background: linear-gradient(180deg, rgba(3,35,58,.06) 0%, rgba(3,35,58,.1) 40%, rgba(3,35,58,.7) 100%); }
+.login-logo { display: flex; align-items: center; gap: 9px; color: #e3fffb; font-size: 24px; }
+.login-logo strong { color: #a6ede3; }
+.login-logo img { width: 38px; height: 38px; background: #0e7592; border-radius: 12px; padding: 5px; }
+.hero-eyebrow { color: #a3e9e7; }
+.login-art h1 { font-size: 39px; line-height: 1.25; }
+.login-art h1 em { color: #9fece6; }
+.login-art p { color: #d4f4f5; font-size: 13px; }
+.login-decor { color: #c1f1ed; font-size: 10px; font-weight: 800; letter-spacing: 2px; }
+.login-icon { background: #0e7899; box-shadow: 0 5px 16px #0e789924; }
+.login-icon img { width: 37px; height: 37px; }
+.login-panel p { color: #7895a4; }
+.login-panel small { color: #8da3b0; }
+.icon-button { color: #145b74; }
+
+@media (max-width: 1280px) {
+  .dashboard-heading { flex-direction: column; align-items: flex-start; }
+  .dashboard-heading .head-actions { align-self: flex-start; }
+  .dashboard-heading:before { right: -65px; opacity: .46; }
+}
+@media (max-width: 830px) {
+  .overlay.show { background: #052638b8; }
+  .dashboard-heading { padding: 27px 24px; }
+  .dashboard-heading:before { right: -140px; opacity: .26; }
+  .dashboard-heading h1 { font-size: 26px; }
+}
+@media (max-width: 600px) {
+  .dashboard-heading { padding: 23px 19px; border-radius: 16px; }
+  .dashboard-heading .head-actions { width: 100%; }
+  .dashboard-heading .head-actions .btn { white-space: normal; text-align: center; }
+  .dashboard-heading:before { width: 350px; right: -185px; bottom: -90px; }
+  .login-wrap { border-radius: 0; }
+}

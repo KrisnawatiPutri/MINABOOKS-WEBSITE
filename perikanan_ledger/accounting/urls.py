@@ -1,0 +1,30 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.dashboard, name='dashboard'),
+    path('accounts/', views.accounts, name='accounts'),
+    path('accounts/new/', views.account_form, name='account_new'),
+    path('accounts/<int:pk>/edit/', views.account_form, name='account_edit'),
+    path('parties/', views.parties, name='parties'),
+    path('parties/new/', views.party_form, name='party_new'),
+    path('parties/<int:pk>/edit/', views.party_form, name='party_edit'),
+    path('journal/', views.journal_list, name='journal_list'),
+    path('journal/new/', views.journal_new, name='journal_new'),
+    path('journal/<int:pk>/', views.journal_detail, name='journal_detail'),
+    path('adjustments/', views.adjustment_list, name='adjustment_list'),
+    path('adjustments/new/', views.adjustment_new, name='adjustment_new'),
+    path('ledger/', views.ledger_view, name='ledger'),
+    path('subsidiary/', views.subsidiary_view, name='subsidiary'),
+    path('trial-balance/', views.trial_balance, name='trial_balance'),
+    path('worksheet/', views.worksheet_view, name='worksheet'),
+    path('income/', views.income_statement, name='income'),
+    path('balance/', views.balance_sheet, name='balance'),
+    path('products/', views.products, name='products'),
+    path('products/new/', views.product_form, name='product_new'),
+    path('products/<int:pk>/edit/', views.product_form, name='product_edit'),
+    path('inventory/', views.inventory_card, name='inventory'),
+    path('inventory/new/', views.movement_new, name='movement_new'),
+    path('settings/', views.settings_view, name='settings'),
+    path('export/<str:kind>/', views.export_view, name='export'),
+]

@@ -1,0 +1,30 @@
+MINABOOKS | PANDUAN INSTALASI WINDOWS
+===================================
+Tema perikanan dari aplikasi AgriBooks. Fitur akuntansi dan perhitungan TIDAK diubah.
+
+1. Instal Python 3.12 atau 3.13 dan centang Add Python to PATH.
+2. Ekstrak ZIP, buka folder tani_ledger di VS Code.
+3. Terminal > New Terminal, jalankan:
+
+   py -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   pip install -r requirements.txt
+   python manage.py makemigrations accounting
+   python manage.py migrate
+   python manage.py createsuperuser
+   python manage.py seed_perikanan --demo
+   python manage.py runserver
+
+4. Buka http://127.0.0.1:8000/ dan login dengan akun yang baru dibuat.
+5. Menu Pengaturan Usaha untuk mengganti nama, bidang usaha, alamat, dll.
+6. Dashboard > Ekspor Semua Excel untuk mengunduh semua laporan.
+
+TANPA DATA DEMO: gunakan `python manage.py seed_perikanan` tanpa `--demo`.
+DATA LAMA: jangan hapus db.sqlite3. Nama usaha lama dapat diganti di Pengaturan Usaha.
+PERHATIAN: seed_perikanan tidak mengganti akun yang sudah ada dan tidak menimpa transaksi.
+Perikanan adalah penyesuaian visual & contoh data; modul asli tetap sama.
+
+Jika PowerShell menolak aktivasi virtualenv:
+  Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+Baca README_PERIKANAN.md untuk penjelasan dan README.md untuk aturan akuntansi.

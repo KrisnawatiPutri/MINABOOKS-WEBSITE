@@ -1,0 +1,551 @@
+{
+  "source_sheet_names": [
+    "MENU",
+    "AKUN",
+    "KODE",
+    "JU JP",
+    "BB",
+    "BB PEMBANTU",
+    "NERACA LAJUR",
+    "LABA RUGI",
+    "NERACA",
+    "INVENTORY CARD"
+  ],
+  "source_period": "Oktober 2025",
+  "source_inventory_method": "FIFO",
+  "source_note": "Template olahraga; bukan data usaha pertanian. Label jenis relasi KODE tertukar terhadap total saldo piutang/utang. Data hanya untuk contoh opsional.",
+  "accounts": [
+    {
+      "code": "1000",
+      "name": "ASSETS",
+      "category": "ASSET",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": true
+    },
+    {
+      "code": "1100",
+      "name": "CURRENT ASSETS",
+      "category": "ASSET",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": true
+    },
+    {
+      "code": "1110",
+      "name": "Cash in bank",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "800000000",
+      "is_header": false
+    },
+    {
+      "code": "1120",
+      "name": "Cash on hand",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "40000000",
+      "is_header": false
+    },
+    {
+      "code": "1130",
+      "name": "Petty cash",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "4000000",
+      "is_header": false
+    },
+    {
+      "code": "1140",
+      "name": "Account Receivable",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "48100000",
+      "is_header": false
+    },
+    {
+      "code": "1141",
+      "name": "Allowance of doubtful debt",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "-800000",
+      "is_header": false
+    },
+    {
+      "code": "1150",
+      "name": "Merchandise Inventory",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "22900000",
+      "is_header": false
+    },
+    {
+      "code": "1160",
+      "name": "Store supplies",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "9000000",
+      "is_header": false
+    },
+    {
+      "code": "1170",
+      "name": "Prepaid rent",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "1180",
+      "name": "Prepaid insurance",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "1190",
+      "name": "Prepaid advertising",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "3000000",
+      "is_header": false
+    },
+    {
+      "code": "1200",
+      "name": "Fix Assets",
+      "category": "ASSET",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": true
+    },
+    {
+      "code": "1210",
+      "name": "Land",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "850000000",
+      "is_header": false
+    },
+    {
+      "code": "1220",
+      "name": "Building",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "350000000",
+      "is_header": false
+    },
+    {
+      "code": "1221",
+      "name": "Building Acc Depr",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "-150000000",
+      "is_header": false
+    },
+    {
+      "code": "1230",
+      "name": "Equipment",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "100000000",
+      "is_header": false
+    },
+    {
+      "code": "1231",
+      "name": "Equipment Acc Depr",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "-60000000",
+      "is_header": false
+    },
+    {
+      "code": "1240",
+      "name": "Vehicle",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "192000000",
+      "is_header": false
+    },
+    {
+      "code": "1241",
+      "name": "Vehicle Acc Depr",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "-80000000",
+      "is_header": false
+    },
+    {
+      "code": "1250",
+      "name": "Computer and Printer",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "36000000",
+      "is_header": false
+    },
+    {
+      "code": "1251",
+      "name": "Computer and Printer Acc Depr",
+      "category": "ASSET",
+      "normal_balance": "D",
+      "opening_balance": "-25500000",
+      "is_header": false
+    },
+    {
+      "code": "2000",
+      "name": "Liabilities",
+      "category": "LIABILITY",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": true
+    },
+    {
+      "code": "2100",
+      "name": "Current Liabilities",
+      "category": "LIABILITY",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": true
+    },
+    {
+      "code": "2110",
+      "name": "Account Payable",
+      "category": "LIABILITY",
+      "normal_balance": "C",
+      "opening_balance": "63000000",
+      "is_header": false
+    },
+    {
+      "code": "2120",
+      "name": "Notes Payable",
+      "category": "LIABILITY",
+      "normal_balance": "C",
+      "opening_balance": "27000000",
+      "is_header": false
+    },
+    {
+      "code": "2150",
+      "name": "Accrued Expense",
+      "category": "LIABILITY",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "2200",
+      "name": "Long Term Liabilities",
+      "category": "LIABILITY",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": true
+    },
+    {
+      "code": "2210",
+      "name": "BRI-Loan",
+      "category": "LIABILITY",
+      "normal_balance": "C",
+      "opening_balance": "250000000",
+      "is_header": false
+    },
+    {
+      "code": "3000",
+      "name": "Equity",
+      "category": "EQUITY",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": true
+    },
+    {
+      "code": "3100",
+      "name": "Owners equity",
+      "category": "EQUITY",
+      "normal_balance": "C",
+      "opening_balance": "550000000",
+      "is_header": false
+    },
+    {
+      "code": "3110",
+      "name": "Retained earnings",
+      "category": "EQUITY",
+      "normal_balance": "C",
+      "opening_balance": "1248700000",
+      "is_header": false
+    },
+    {
+      "code": "4000",
+      "name": "Revenues",
+      "category": "REVENUE",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": true
+    },
+    {
+      "code": "4110",
+      "name": "Sales revenues",
+      "category": "REVENUE",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "4120",
+      "name": "Freight collected",
+      "category": "REVENUE",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "4130",
+      "name": "Sales discount",
+      "category": "REVENUE",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "4140",
+      "name": "Sales return",
+      "category": "REVENUE",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "5000",
+      "name": "Cost of Goods Sold",
+      "category": "COGS",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": true
+    },
+    {
+      "code": "5110",
+      "name": "Cost of goods sold",
+      "category": "COGS",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "5120",
+      "name": "Purchase discount",
+      "category": "COGS",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "5130",
+      "name": "Purchase return",
+      "category": "COGS",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "5140",
+      "name": "Freight paid",
+      "category": "COGS",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "6000",
+      "name": "Operating Expense",
+      "category": "EXPENSE",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": true
+    },
+    {
+      "code": "6110",
+      "name": "Advertising expense",
+      "category": "EXPENSE",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "6120",
+      "name": "Telephone, Water, Electricity exkpense",
+      "category": "EXPENSE",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "6130",
+      "name": "Rent expense",
+      "category": "EXPENSE",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "6140",
+      "name": "Store supplies expense",
+      "category": "EXPENSE",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "6150",
+      "name": "Maintenance and repair expense",
+      "category": "EXPENSE",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "6160",
+      "name": "Bad dept expense",
+      "category": "EXPENSE",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "6170",
+      "name": "Depreciation expense",
+      "category": "EXPENSE",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "6180",
+      "name": "Insurance expense",
+      "category": "EXPENSE",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "6190",
+      "name": "Wages and salaries expense",
+      "category": "EXPENSE",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "6200",
+      "name": "Cleaning expense",
+      "category": "EXPENSE",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "7000",
+      "name": "Other Revenues and Gains",
+      "category": "OTHER_INCOME",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": true
+    },
+    {
+      "code": "7110",
+      "name": "Penalty income",
+      "category": "OTHER_INCOME",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "8000",
+      "name": "Other Expense and Losses",
+      "category": "OTHER_EXPENSE",
+      "normal_balance": "C",
+      "opening_balance": "0",
+      "is_header": true
+    },
+    {
+      "code": "8110",
+      "name": "Interest income",
+      "category": "OTHER_INCOME",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "8120",
+      "name": "Interst expense",
+      "category": "OTHER_EXPENSE",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "8130",
+      "name": "Bank service charge",
+      "category": "OTHER_EXPENSE",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "8140",
+      "name": "Miscellaneous expense",
+      "category": "OTHER_EXPENSE",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    },
+    {
+      "code": "8150",
+      "name": "Gain/loss sales fixed assets",
+      "category": "OTHER_EXPENSE",
+      "normal_balance": "D",
+      "opening_balance": "0",
+      "is_header": false
+    }
+  ],
+  "parties": [
+    {
+      "code": "C001",
+      "name": "NITRO SPORTS",
+      "kind": "CUSTOMER",
+      "opening_balance": "15500000",
+      "original_label": "Account Payable"
+    },
+    {
+      "code": "C002",
+      "name": "TOKO BUGAR SEGAR",
+      "kind": "CUSTOMER",
+      "opening_balance": "20100000",
+      "original_label": "Account Payable"
+    },
+    {
+      "code": "C003",
+      "name": "SPORT N FASHION",
+      "kind": "CUSTOMER",
+      "opening_balance": "12500000",
+      "original_label": "Account Payable"
+    },
+    {
+      "code": "S001",
+      "name": "PT BUDI BAHARI",
+      "kind": "SUPPLIER",
+      "opening_balance": "10000000",
+      "original_label": "Account Receivable"
+    },
+    {
+      "code": "S002",
+      "name": "CV GARUDA SAKTI",
+      "kind": "SUPPLIER",
+      "opening_balance": "32500000",
+      "original_label": "Account Receivable"
+    },
+    {
+      "code": "S003",
+      "name": "PT SEHAT SENTOSA",
+      "kind": "SUPPLIER",
+      "opening_balance": "20500000",
+      "original_label": "Account Receivable"
+    }
+  ]
+}
