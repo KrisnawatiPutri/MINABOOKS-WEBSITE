@@ -1,4 +1,4 @@
-﻿# AGRIBOOKS: Website Akuntansi Pertanian Django
+﻿# MINABOOKS: Website Akuntansi Perikanan Django
 
 Sistem informasi akuntansi **single-company** berbasis Django 5.2 LTS, SQLite,
 HTML/CSS/JavaScript vanilla, dan openpyxl untuk ekspor Excel **dengan rumus aktif**. Antarmuka
